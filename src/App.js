@@ -61,9 +61,7 @@ function App() {
 
         const { latitude, longitude, timezone, name, country_code } =
           geoData.results.at(0);
-        // this.setState({
-        //   displayLocation: `${name} ${convertToFlag(country_code)}`,
-        // });
+
         setDisplayLocation(`${name} ${convertToFlag(country_code)}`);
 
         // 2) Getting actual weather
